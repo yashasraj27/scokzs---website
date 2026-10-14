@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>scokzs – premium socks, fair prices</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFAF6;--ink:#14172B;--muted:#555A70;--cobalt:#2437C8;--butter:#FFD84D;--mint:#BFE8D2;--card:#fff;--line:#E4E1D6;--onc:#fff;--whyt:#14172B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1224;--ink:#F4F2EA;--muted:#A5A9C0;--card:#181C36;--line:#2A2F52;--cobalt:#7C8CFF;--onc:#0F1224;--mint:#1F3F33;--whyt:#F4F2EA}}
+:root[data-theme="dark"]{--bg:#0F1224;--ink:#F4F2EA;--muted:#A5A9C0;--card:#181C36;--line:#2A2F52;--cobalt:#7C8CFF;--onc:#0F1224;--mint:#1F3F33;--whyt:#F4F2EA}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.hd{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:20}
+.bar{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px;flex-wrap:wrap;gap:8px}
+.logo{font:800 26px "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.03em}
+nav{display:flex;gap:18px;align-items:center}
+nav a{text-decoration:none;font-weight:500}
+nav .cart{background:var(--ink);color:var(--bg);border-radius:99px;padding:7px 16px;font-weight:700}
+.btn{display:inline-block;background:var(--cobalt);color:var(--onc);padding:13px 24px;border-radius:99px;font:700 16px "DM Sans",sans-serif;text-decoration:none;border:0;cursor:pointer;text-align:center}
+.btn.o{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:11px 22px}
+.btn.y{background:var(--butter);color:#14172B}
+.btn.dk{background:var(--ink);color:var(--bg)}
+.btn.sm{padding:8px 16px;font-size:14px}
+.btn.full{width:100%}
+.top{position:relative;overflow:hidden;background:#0F1224;color:#fff}
+.top::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle,rgba(0,0,0,.05),rgba(0,0,0,.5))}
+.silk{position:absolute;inset:0;width:100%;height:100%}
+.hero{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:50px;padding-bottom:70px}
+.hero h1{font-size:clamp(42px,7vw,92px);font-weight:800}
+.hero p{max-width:30em;color:rgba(255,255,255,.85);font-size:18px;margin:20px 0 26px}
+.hero .btn.o{color:#fff;border-color:#fff;margin-left:6px}
+.stage{position:relative;aspect-ratio:1;background:var(--butter);border-radius:50% 50% 46% 54%/54% 46% 54% 46%;display:grid;place-items:center}
+.stage svg{width:60%;transform:rotate(-12deg);filter:drop-shadow(0 16px 0 rgba(20,23,43,.12))}
+.tag{position:absolute;right:2%;bottom:10%;background:#14172B;color:#fff;padding:9px 15px;border-radius:14px;font-weight:700;transform:rotate(6deg)}
+.band{background:var(--ink);color:var(--bg);padding:14px 0;font:800 22px "Bricolage Grotesque",sans-serif;overflow:hidden;white-space:nowrap}
+.band div{display:inline-block;padding-left:100%;animation:run 30s linear infinite}
+@keyframes run{to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.band div{animation:none;padding-left:20px}}
+.sec{padding-top:56px;padding-bottom:56px}
+h2{font-size:clamp(30px,4.6vw,50px);font-weight:800}
+.sub{color:var(--muted);margin:10px 0 28px;max-width:36em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.pic{display:grid;place-items:center;padding:24px 0 10px;text-decoration:none}
+.pic svg{width:92px}
+.info{padding:0 18px 18px;display:flex;flex-direction:column;gap:3px;flex:1}
+.info h3{font-size:21px;font-weight:800}
+.info h3 a{text-decoration:none}
+.cat,.stars{font-size:13px;color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:8px}
+.price{font:800 21px "Bricolage Grotesque",sans-serif}
+.why{background:var(--mint);color:var(--whyt);padding:60px 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:26px}
+.cols h3{font-size:22px;margin-bottom:6px}.cols p{margin:0;opacity:.85}
+.page{padding-top:36px;padding-bottom:64px}
+.crumb{font-size:14px;color:var(--muted);margin-bottom:14px}
+.shop{display:grid;grid-template-columns:230px 1fr;gap:28px;margin-top:22px}
+.filters{display:flex;flex-direction:column;gap:18px;align-self:start}
+.filters label,.f label{font-weight:700;font-size:14px;display:block;margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip,.sz{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:7px 15px;font:500 14px "DM Sans",sans-serif;cursor:pointer}
+.chip.on,.sz.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.in{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:10px}
+.big{background:var(--butter);border-radius:28px;display:grid;place-items:center;aspect-ratio:1}
+.big svg{width:42%;transform:rotate(-8deg)}
+.pd h1{font-size:clamp(34px,5vw,54px);font-weight:800;margin:6px 0 8px}
+.pd .price{font-size:30px}
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 18px}
+.qty{display:inline-flex;align-items:center;gap:14px;border:1.5px solid var(--line);border-radius:99px;padding:4px 8px;margin-bottom:6px}
+.qty button{border:0;background:none;color:var(--ink);font-size:20px;width:32px;height:32px;cursor:pointer}
+.link{background:none;border:0;color:var(--cobalt);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+ul.tick{padding-left:20px;color:var(--muted)}
+.rev{border-top:1px solid var(--line);padding:14px 0}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+.line{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.line svg{width:50px;justify-self:center}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.box h3{font-size:22px;margin-bottom:12px}
+.sum{display:flex;justify-content:space-between;padding:5px 0}
+.sum.t{font-weight:800;font-size:20px;border-top:1px solid var(--line);margin-top:8px;padding-top:12px}
+.f{display:grid;gap:14px}.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pay{display:flex;gap:10px;align-items:center;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;margin-bottom:8px}
+.tabs{display:flex;gap:8px;margin:18px 0;flex-wrap:wrap}
+details{border-bottom:1px solid var(--line);padding:14px 0}summary{font-weight:700;cursor:pointer}
+details p{margin:8px 0 0;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:15px}td,th{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left}
+.ov{position:fixed;inset:0;background:rgba(10,12,28,.6);display:grid;place-items:center;padding:20px;z-index:50}
+.ov[hidden]{display:none}
+.mod{background:var(--bg);border-radius:22px;padding:28px;max-width:460px;width:100%;position:relative;max-height:85vh;overflow:auto}
+.mod h3{font-size:26px;margin-bottom:10px}
+.x{position:absolute;right:14px;top:10px;background:none;border:0;font-size:28px;color:var(--ink);cursor:pointer}
+.ok{background:var(--mint);color:var(--whyt);padding:14px 16px;border-radius:14px}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+footer a{margin-right:14px}
+[hidden]{display:none!important}
+nav{flex-wrap:wrap;gap:6px 16px}
+.back{display:inline-block;margin-top:16px;font-weight:700;text-decoration:none}
+.back:hover{text-decoration:underline}
+.tile{display:grid;justify-items:center;gap:8px;padding:26px 20px;border-radius:24px;text-decoration:none;color:#14172B;font:800 28px "Bricolage Grotesque",sans-serif}
+.tile svg{width:64px}
+.pic.im{padding:0;aspect-ratio:1}
+.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.big img{width:100%;height:100%;object-fit:cover;border-radius:28px}
+.line img{width:56px;height:56px;object-fit:cover;border-radius:10px;justify-self:center}
+.ebar{background:var(--butter);color:#14172B;padding:10px 0;font-size:14px;font-weight:500}
+.pill{background:#14172B;color:#fff;border-radius:99px;font-size:11px;padding:2px 9px;margin-left:6px}
+.ed{display:grid;gap:12px}.ed label{font-weight:700;font-size:14px;display:block;margin-bottom:4px}.c3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.c3 .in{padding:4px;height:44px}
+.thumb{width:84px;height:84px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+@media (max-width:780px){.hero,.shop,.pd,.two{grid-template-columns:1fr}.stage{max-width:340px;margin:0 auto}.hero .btn.o{margin:10px 0 0}.f2{grid-template-columns:1fr}.filters{flex-direction:row;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header class="hd"><div class="wrap bar"><a class="logo" href="#/">scokzs</a>
+<nav><a href="#/shop/Women">Women</a><a href="#/shop/Men">Men</a><a href="#/shop/Kids">Kids</a><a href="#/shop">Shop all</a><a href="#/support">Support</a><a href="#/account" id="acc">Account</a><button class="btn sm y" id="eb" data-act="toggle" hidden>Edit store</button><a href="#/cart" class="cart" id="cartb">Cart (0)</a></nav></div></header>
+<main id="app"></main>
+<footer><div class="wrap"><div><strong style="color:var(--ink)">scokzs</strong><br>Premium socks at fair prices.<br>This is a demo store: no real payments are taken.</div>
+<div><a href="#/shop">Shop</a><a href="#/support">Support</a><a href="#/account">Account</a><br>hello@scokzs.com</div></div></footer>
+<div class="ov" id="ov" hidden><div class="mod" role="dialog" aria-modal="true"><button class="x" data-act="close" aria-label="Close">×</button><div id="mb"></div></div></div>
+
+<script type="application/json" id="pdata"></script>
+<script>
+const SRC="<!DOCTYPE html>"+String.fromCharCode(10)+document.documentElement.outerHTML;
+const $=s=>document.querySelector(s),app=$("#app");
+const R=n=>"₹"+n.toLocaleString("en-IN");
+const ld=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const P0=[
+{id:1,n:"Everyday Crew",c:"Crew",p:349,b:"#2437C8",s:"#FBFAF6",t:"stripe",r:4.8,d:"Mid-calf crew with a cushioned sole. The pair you'll reach for first."},
+{id:2,n:"Sprint Ankle",c:"Ankle",p:299,b:"#FFD84D",s:"#14172B",t:"block",r:4.6,d:"Low-cut and light, with a grippy heel that stays put in sneakers."},
+{id:3,n:"Cloud Cushion",c:"Sport",p:399,b:"#BFE8D2",s:"#2437C8",t:"dots",r:4.9,d:"Extra padding under the heel and ball of the foot for long days."},
+{id:4,n:"Office Rib",c:"Formal",p:349,b:"#14172B",s:"#FFD84D",t:"stripe",r:4.7,d:"Fine ribbed knit that looks sharp with formal shoes."},
+{id:5,n:"Weekend Stripe",c:"Crew",p:379,b:"#F4A6B7",s:"#14172B",t:"stripe",r:4.5,d:"Bold stripes for days when your socks are the outfit."},
+{id:6,n:"Low Show",c:"Ankle",p:279,b:"#E9E6DA",s:"#2437C8",t:"block",r:4.4,d:"A barely-there cut for loafers and canvas shoes."},
+{id:7,n:"Trail Run",c:"Sport",p:429,b:"#1E6B52",s:"#FFD84D",t:"dots",r:4.8,d:"Moisture-wicking blend with arch support for runs and hikes."},
+{id:8,n:"Trio Pack",c:"Packs",p:899,b:"#2437C8",s:"#FFD84D",t:"dots",r:4.9,d:"Three pairs, one price. Our best value."}];
+P0.push({id:9,n:"Little Stripe",c:"Crew",p:249,b:"#FFD84D",s:"#2437C8",t:"stripe",r:4.8,d:"Soft, stretchy crew socks sized for small feet.",g:"Kids"},{id:10,n:"Play Day Ankle",c:"Ankle",p:229,b:"#BFE8D2",s:"#14172B",t:"dots",r:4.7,d:"Easy-fit ankle socks for school and playtime.",g:"Kids"},{id:11,n:"Kids Trio Pack",c:"Packs",p:599,b:"#F4A6B7",s:"#2437C8",t:"stripe",r:4.9,d:"Three pairs in mixed colours for school and play.",g:"Kids"});
+const G0={1:"Unisex",2:"Women",3:"Men",4:"Men",5:"Women",6:"Women",7:"Men",8:"Unisex"};P0.forEach(p=>{p.g=G0[p.id]||p.g});
+const SEED=[["Aarav",5,"Fits snug and doesn't slip down. Great value for the quality."],["Meera",5,"Soft fabric, and they've held up well after many washes."],["Rohan",4,"Good for daily office wear. I'd love a few more colours."]];
+const DEF=["Combed cotton blend with stretch","Reinforced heel and toe","Free delivery over ₹799 · 30-day returns"];
+let P=(()=>{try{const t=$("#pdata").textContent.trim();return t?JSON.parse(t):P0}catch(e){return P0}})();
+let edit=false,art=null,draftImg=null,cart=ld("sk_cart",[]).filter(l=>P.some(p=>p.id==l.id)),user=ld("sk_user",null),orders=ld("sk_orders",[]),rev=ld("sk_rev",{}),buy=null,last=null,tab="orders",sel={size:"M",q:1},F={cat:"All",max:1000,sort:"pop",q:""},uid=0,raf=0,sz=()=>{};
+const pid=id=>P.find(x=>x.id==id);
+const lines=()=>(buy||cart).filter(l=>pid(l.id)).map(l=>({...l,x:pid(l.id)}));
+const szs=x=>x.g=="Kids"?["2-4y","5-7y","8-10y"]:["S","M","L"],dsz=x=>szs(x)[1];
+const vis=()=>P.filter(x=>edit||!x.hide);
+const thumb=x=>x.img?`<img src="${x.img}" alt="${esc(x.n)}">`:sock(x);
+const tot=ls=>{const s=ls.reduce((a,l)=>a+l.x.p*l.q,0),sh=!s||s>=799?0:49;return{s,sh,t:s+sh}};
+const badge=()=>{$("#cartb").textContent=`Cart (${cart.reduce((a,l)=>a+l.q,0)})`;$("#acc").textContent=user?user.name.split(" ")[0]:"Account"};
+const saveC=()=>{sv("sk_cart",cart);badge()};
+function sock(x){const i=++uid;let o;
+ if(x.t==="stripe")o=[20,44,68].map(y=>`<rect y="${y}" width="100" height="9" fill="${x.s}"/>`).join("");
+ else if(x.t==="dots")o=[[40,24],[54,40],[40,56],[54,72],[44,92],[70,96]].map(c=>`<circle cx="${c[0]}" cy="${c[1]}" r="4" fill="${x.s}"/>`).join("");
+ else o=`<rect width="100" height="14" fill="${x.s}"/><rect x="60" y="86" width="50" height="40" fill="${x.s}"/><rect x="20" y="98" width="30" height="30" fill="${x.s}"/>`;
+ return `<svg viewBox="0 0 100 120" aria-hidden="true"><defs><clipPath id="c${i}"><path d="M28 4H64V62C64 74 76 78 86 88C96 98 90 112 76 112H36C24 112 28 100 28 90Z"/></clipPath></defs><g clip-path="url(#c${i})"><rect width="100" height="120" fill="${x.b}"/>${o}</g></svg>`}
+const revs=id=>[...(rev[id]||[]),...SEED];
+const card=x=>`<article class="card"><a class="pic${x.img?" im":""}" href="#/product/${x.id}" aria-label="${x.n}">${thumb(x)}</a><div class="info"><span class="cat">${x.g&&x.g!="Unisex"?x.g+" · ":""}${x.c}${x.hide?'<span class="pill">Hidden</span>':""}</span><h3><a href="#/product/${x.id}">${x.n}</a></h3><span class="stars">★ ${x.r} · ${revs(x.id).length} reviews</span><div class="row"><span class="price">${R(x.p)}</span><span style="display:flex;gap:6px">${edit?`<button class="btn sm o" data-act="ed" data-id="${x.id}">Edit</button>`:""}<button class="btn sm dk" data-act="quick" data-id="${x.id}">Add</button></span></div></div></article>`;
+const guide=()=>`<h3>Size guide</h3><table><tr><th>Size</th><th>UK</th><th>EU</th></tr><tr><td>S</td><td>5–7</td><td>38–41</td></tr><tr><td>M</td><td>8–10</td><td>42–44</td></tr><tr><td>L</td><td>11–13</td><td>45–48</td></tr><tr><td>Kids 2-4y</td><td>C6–C9</td><td>23–27</td></tr><tr><td>Kids 5-7y</td><td>C10–C13</td><td>28–32</td></tr><tr><td>Kids 8-10y</td><td>C13–2</td><td>32–35</td></tr></table><p class="sub" style="margin:14px 0 0">Kids sizes are approximate. Between sizes? Pick the larger one for a relaxed fit or the smaller one for a snug fit.</p>`;
+function modal(h){$("#mb").innerHTML=h;$("#ov").hidden=false;$(".x").focus()}
+const closeM=()=>{$("#ov").hidden=true};
+
+/* ---------- views ---------- */
+const vHome=()=>`<section class="top"><canvas class="silk" id="silk" aria-hidden="true"></canvas><div class="wrap hero"><div><h1>Good socks shouldn't cost a fortune.</h1><p>Premium combed cotton, reinforced heels and toes, and prices that make sense. Free delivery on orders over ₹799.</p><a class="btn y" href="#/shop">Shop socks</a> <a class="btn o" href="#/support">Size guide &amp; help</a></div><div class="stage">${sock(P0[0])}<div class="tag">from ${R(Math.min(...P.map(x=>x.p),999))} a pair</div></div></div></section>
+<div class="band" aria-hidden="true"><div>Combed cotton &nbsp;✦&nbsp; Reinforced heel &amp; toe &nbsp;✦&nbsp; Free delivery over ₹799 &nbsp;✦&nbsp; 30-day returns &nbsp;✦&nbsp; Combed cotton &nbsp;✦&nbsp; Reinforced heel &amp; toe &nbsp;✦&nbsp; Free delivery over ₹799 &nbsp;✦&nbsp; 30-day returns</div></div>
+<section class="wrap sec" style="padding-bottom:0"><h2>Shop for everyone</h2><div class="cols">${[["Women","#F4A6B7",0],["Men","#BFE8D2",3],["Kids","#FFD84D",8]].map(t=>`<a class="tile" href="#/shop/${t[0]}" style="background:${t[1]}">${sock(P0[t[2]])}<span>${t[0]}</span></a>`).join("")}</div></section>
+<section class="wrap sec"><h2>Bestsellers</h2><p class="sub">Our most-loved pairs, all made from the same quality fabric.</p><div class="grid">${vis().slice(0,4).map(card).join("")}</div><p style="margin-top:26px"><a class="btn" href="#/shop">View all socks</a></p></section>
+<section class="why"><div class="wrap"><h2>Premium where it counts</h2><div class="cols"><div><h3>Soft, breathable cotton</h3><p>Combed cotton with a touch of stretch keeps your feet comfortable all day.</p></div><div><h3>Built to last</h3><p>Reinforced heels and toes handle daily wear, so you replace socks less often.</p></div><div><h3>Priced fairly</h3><p>We sell direct and skip the middlemen. You pay for the socks, not the markup.</p></div></div></div></section>
+<section class="wrap sec"><h2>What customers say</h2><div class="cols">${SEED.map(r=>`<div class="box"><div class="stars">${"★".repeat(r[1])}</div><p>${r[2]}</p><strong>${r[0]}</strong></div>`).join("")}</div></section>`;
+
+const vShop=a=>{F.g=["Women","Men","Kids"].includes(a)?a:"All";return `<div class="wrap page"><div class="crumb"><a href="#/">Home</a> / Shop</div><h2>${{Women:"Women's socks",Men:"Men's socks",Kids:"Kids' socks"}[F.g]||"Shop all socks"}</h2><div class="shop"><aside class="filters">
+<div><label for="q">Search</label><input class="in" id="q" data-f="q" placeholder="Search socks" value="${esc(F.q)}"></div>
+<div><label>Shop for</label><div class="chips">${["All","Women","Men","Kids"].map(g=>`<button class="chip${F.g==g?" on":""}" data-act="gen" data-v="${g}">${g}</button>`).join("")}</div></div>
+<div><label>Category</label><div class="chips">${["All",...new Set(vis().map(x=>x.c))].map(c=>`<button class="chip${F.cat==c?" on":""}" data-act="cat" data-v="${c}">${c}</button>`).join("")}</div></div>
+<div><label for="mx">Max price: <span id="mxv">${R(+F.max)}</span></label><input type="range" id="mx" data-f="max" min="250" max="1000" step="50" value="${F.max}" style="width:100%"></div>
+<div><label for="so">Sort by</label><select class="in" id="so" data-f="sort"><option value="pop"${F.sort=="pop"?" selected":""}>Top rated</option><option value="lo"${F.sort=="lo"?" selected":""}>Price: low to high</option><option value="hi"${F.sort=="hi"?" selected":""}>Price: high to low</option></select></div>
+</aside><div><p class="sub" id="cnt" style="margin:0 0 14px"></p><div class="grid" id="res"></div></div></div></div>`};
+function results(){let l=vis().filter(x=>(F.g=="All"||!x.g||x.g=="Unisex"||x.g==F.g)&&(F.cat=="All"||x.c==F.cat)&&x.p<=F.max&&x.n.toLowerCase().includes(F.q.toLowerCase()));
+ l.sort((a,b)=>F.sort=="lo"?a.p-b.p:F.sort=="hi"?b.p-a.p:b.r-a.r);
+ $("#cnt").textContent=`${l.length} ${l.length==1?"style":"styles"}`;
+ $("#res").innerHTML=l.length?l.map(card).join(""):`<p>No socks match those filters. Try a higher price or a different category.</p>`}
+
+const vProd=id=>{const x=pid(id);if(!x||(x.hide&&!edit))return vNF();const SZ=szs(x);sel={size:SZ[1],q:1};const rv=revs(id);
+ return `<div class="wrap page"><div class="crumb"><a href="#/">Home</a> / <a href="#/shop">Shop</a> / ${x.n}</div><div class="pd"><div class="big">${thumb(x)}</div><div>
+<span class="cat">${x.c}</span>${edit?` <button class="btn sm o" data-act="ed" data-id="${id}">Edit product</button>`:""}<h1>${x.n}</h1><div class="stars">★ ${x.r} · ${rv.length} reviews</div><div class="price" style="margin:10px 0">${R(x.p)}</div><p>${esc(x.d||"")}</p>
+<label style="font-weight:700">Size <button class="link" data-act="guide" style="font-weight:400;margin-left:8px">Size guide</button></label>
+<div class="opts">${SZ.map((s,i)=>`<button class="sz${i==1?" on":""}" data-act="size" data-v="${s}">${s}</button>`).join("")}</div>
+<div class="qty"><button data-act="q-" aria-label="Fewer">−</button><span id="qv">1</span><button data-act="q+" aria-label="More">+</button></div>
+<div class="acts"><button class="btn dk" data-act="add" data-id="${id}">Add to Cart</button><button class="btn" data-act="buy" data-id="${id}">Buy Now</button></div>
+<ul class="tick">${(x.f&&x.f.length?x.f:DEF).map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div></div>
+<div class="two" style="margin-top:44px"><div><h2 style="font-size:32px">Reviews</h2>${rv.map(r=>`<div class="rev"><div class="stars">${"★".repeat(r[1])}${"☆".repeat(5-r[1])}</div><p style="margin:4px 0"><strong>${esc(r[0])}</strong>: ${esc(r[2])}</p></div>`).join("")}</div>
+<form class="box f" data-form="rev" data-id="${id}"><h3>Write a review</h3><div><label for="rn">Name</label><input class="in" id="rn" name="n" required></div><div><label for="rr">Rating</label><select class="in" id="rr" name="r"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></div><div><label for="rt">Your review</label><textarea class="in" id="rt" name="t" rows="3" required></textarea></div><button class="btn dk">Post review</button></form></div></div>`};
+
+const vCart=()=>{const ls=lines(),T=tot(ls);
+ if(!ls.length)return `<div class="wrap page"><h2>Your cart</h2><p class="sub">Your cart is empty. Find a pair you like.</p><a class="btn" href="#/shop">Shop socks</a></div>`;
+ return `<div class="wrap page"><h2>Your cart</h2><div class="two" style="margin-top:20px"><div>${ls.map((l,i)=>`<div class="line">${thumb(l.x)}<div><strong>${l.x.n}</strong><br><span class="cat">Size ${l.size} · ${R(l.x.p)}</span><br><span class="qty" style="margin:6px 0 0"><button data-act="dec" data-k="${i}" aria-label="Fewer">−</button>${l.q}<button data-act="inc" data-k="${i}" aria-label="More">+</button></span> <button class="link" data-act="rm" data-k="${i}">Remove</button></div><strong>${R(l.x.p*l.q)}</strong></div>`).join("")}</div>
+<div class="box"><h3>Order summary</h3><div class="sum"><span>Subtotal</span><span>${R(T.s)}</span></div><div class="sum"><span>Delivery</span><span>${T.sh?R(T.sh):"Free"}</span></div><div class="sum t"><span>Total</span><span>${R(T.t)}</span></div>${T.sh?`<p class="cat">Add ${R(799-T.s)} more for free delivery.</p>`:""}<a class="btn full" href="#/checkout" data-act="co">Proceed to Checkout</a></div></div></div>`};
+
+const vCheck=()=>{const ls=lines(),T=tot(ls);if(!ls.length)return vCart();const u=user||{};
+ return `<div class="wrap page"><div class="crumb">${buy?"Buy now":"Cart"} / Checkout</div><h2>Checkout</h2><div class="two" style="margin-top:20px"><form class="f" data-form="order" id="of"><div class="box f"><h3>Delivery details</h3><div class="f2"><div><label for="o1">Full name</label><input class="in" id="o1" name="name" required value="${esc(u.name||"")}"></div><div><label for="o2">Phone</label><input class="in" id="o2" name="phone" type="tel" required value="${esc(u.phone||"")}"></div></div><div><label for="o3">Email</label><input class="in" id="o3" name="email" type="email" required value="${esc(u.email||"")}"></div><div><label for="o4">Address</label><input class="in" id="o4" name="addr" required value="${esc(u.addr||"")}"></div><div class="f2"><div><label for="o5">City</label><input class="in" id="o5" name="city" required></div><div><label for="o6">PIN code</label><input class="in" id="o6" name="pin" pattern="[0-9]{6}" title="6-digit PIN code" required></div></div></div>
+<div class="box"><h3>Payment</h3>${["UPI","Credit / debit card","Cash on delivery"].map((m,i)=>`<label class="pay"><input type="radio" name="pay" value="${m}"${i?"":" checked"}> ${m}</label>`).join("")}<p class="cat" style="margin:6px 0 0">Demo store: no real payment is taken.</p></div></form>
+<div class="box"><h3>Your order</h3>${ls.map(l=>`<div class="sum"><span>${l.x.n} (${l.size}) × ${l.q}</span><span>${R(l.x.p*l.q)}</span></div>`).join("")}<div class="sum"><span>Delivery</span><span>${T.sh?R(T.sh):"Free"}</span></div><div class="sum t"><span>Total</span><span>${R(T.t)}</span></div><button class="btn full" form="of">Place Order</button></div></div></div>`};
+
+const vDone=()=>{if(!last)return vHome();return `<div class="wrap page"><div class="ok"><strong>Order placed. Thank you, ${esc(last.name.split(" ")[0])}!</strong></div><h2 style="margin-top:24px">Order ${last.id}</h2><p class="sub">We'll send updates to ${esc(last.email)}. Estimated delivery: 3–5 days to ${esc(last.city)}. Paying by ${last.pay}.</p><div class="box" style="max-width:520px">${last.items.map(i=>`<div class="sum"><span>${i.n} (${i.size}) × ${i.q}</span><span>${R(i.p*i.q)}</span></div>`).join("")}<div class="sum t"><span>Total</span><span>${R(last.total)}</span></div></div><p style="margin-top:22px"><a class="btn" href="#/shop">Keep shopping</a> <a class="btn o" href="#/account">View my orders</a></p></div>`};
+
+const vAcc=()=>{if(!user)return `<div class="wrap page" style="max-width:480px"><h2>Account</h2><p class="sub">Sign in or create an account to track orders and save your details.</p><form class="box f" data-form="login"><div><label for="a1">Name</label><input class="in" id="a1" name="name" required></div><div><label for="a2">Email</label><input class="in" id="a2" name="email" type="email" required></div><div><label for="a3">Password</label><input class="in" id="a3" name="pw" type="password" minlength="6" required></div><button class="btn dk">Sign in / Create account</button><p class="cat" style="margin:0">Demo only: your details stay in this browser.</p></form></div>`;
+ return `<div class="wrap page"><h2>Hi, ${esc(user.name.split(" ")[0])}</h2><div class="tabs"><button class="chip${tab=="orders"?" on":""}" data-act="tab" data-v="orders">Orders</button><button class="chip${tab=="profile"?" on":""}" data-act="tab" data-v="profile">Profile</button><button class="chip" data-act="out">Sign out</button></div>`+
+ (tab=="orders"?(orders.length?orders.map(o=>`<div class="box" style="margin-bottom:12px"><div class="sum"><strong>Order ${o.id}</strong><span>${o.date}</span></div><p class="cat" style="margin:0">${o.items.map(i=>`${i.n} × ${i.q}`).join(", ")}</p><div class="sum t"><span>Total</span><span>${R(o.total)}</span></div></div>`).join(""):`<p class="sub">No orders yet.</p><a class="btn" href="#/shop">Start shopping</a>`):
+ `<form class="box f" data-form="prof" style="max-width:520px"><div><label for="p1">Name</label><input class="in" id="p1" name="name" required value="${esc(user.name)}"></div><div><label for="p2">Email</label><input class="in" id="p2" name="email" type="email" required value="${esc(user.email)}"></div><div><label for="p3">Phone</label><input class="in" id="p3" name="phone" value="${esc(user.phone||"")}"></div><div><label for="p4">Saved address</label><input class="in" id="p4" name="addr" value="${esc(user.addr||"")}"></div><button class="btn dk">Save changes</button></form>`)+`</div>`};
+
+const vSup=()=>`<div class="wrap page"><h2>Customer support</h2><p class="sub">Answers to common questions, or send us a message and we'll reply within one working day.</p><div class="two"><div>
+<details><summary>How long does delivery take?</summary><p>Most orders arrive in 3–5 working days. Delivery is free over ₹799 and ₹49 below that.</p></details>
+<details><summary>What is your return policy?</summary><p>Unworn, unwashed socks can be returned within 30 days for a refund or exchange.</p></details>
+<details><summary>How do I pick my size?</summary><p><button class="link" data-act="guide">Open the size guide</button> to match your UK or EU shoe size to S, M or L.</p></details>
+<details><summary>How should I wash them?</summary><p>Machine wash cold, inside out, and tumble dry low to keep them soft and snug.</p></details>
+<details><summary>Which payment methods do you accept?</summary><p>UPI, cards and cash on delivery.</p></details></div>
+<form class="box f" data-form="contact" id="cf"><h3>Contact us</h3><div><label for="c1">Name</label><input class="in" id="c1" name="n" required></div><div><label for="c2">Email</label><input class="in" id="c2" name="e" type="email" required></div><div><label for="c3">How can we help?</label><textarea class="in" id="c3" rows="4" required></textarea></div><button class="btn dk">Send message</button></form></div></div>`;
+const vNF=()=>`<div class="wrap page"><h2>Page not found</h2><p class="sub">That page doesn't exist.</p><a class="btn" href="#/">Back to home</a></div>`;
+
+/* ---------- silk background (home hero) ---------- */
+function initSilk(){const cv=$("#silk");if(!cv)return;const ctx=cv.getContext("2d"),box=cv.parentElement;let W,H,img,t=0;
+ const nz=(x,y)=>{const G=2.71828;return(G*Math.sin(G*x)*G*Math.sin(G*y)*(1+x))%1};
+ const fr=()=>{const d=img.data,o=.02*t;for(let y=0;y<H;y++)for(let x=0;x<W;x++){const u=x/W*2,v=y/H*2,ty=v+.03*Math.sin(8*u-o);
+  const p=.6+.4*Math.sin(5*(u+ty+Math.cos(3*u+5*ty)+.02*o)+Math.sin(20*(u+ty-.1*o)));const k=Math.max(0,p-nz(x*4,y*4)/15*.8),i=(y*W+x)*4;
+  d[i]=60*k;d[i+1]=82*k;d[i+2]=235*k;d[i+3]=255}ctx.putImageData(img,0,0);t++};
+ const lp=()=>{fr();raf=requestAnimationFrame(lp)};
+ sz=()=>{W=Math.max(80,box.clientWidth>>2);H=Math.max(60,box.clientHeight>>2);cv.width=W;cv.height=H;img=ctx.createImageData(W,H)};
+ sz();matchMedia("(prefers-reduced-motion:reduce)").matches?fr():lp()}
+addEventListener("resize",()=>{if($("#silk"))sz()});
+
+/* ---------- router ---------- */
+function render(){cancelAnimationFrame(raf);closeM();const [,r,a]=(location.hash||"#/").slice(1).split("/");
+ const m={"":vHome,shop:vShop,product:vProd,cart:vCart,checkout:vCheck,done:vDone,account:vAcc,support:vSup};
+ if(r!=="checkout")buy=buy&&r==="checkout"?buy:null;
+ app.innerHTML=(edit?EB:"")+(r?BK:"")+(m[r||""]||vNF)(a);scrollTo(0,0);document.title=r?`${r[0].toUpperCase()+r.slice(1)} – scokzs`:"scokzs – premium socks, fair prices";
+ if(!r)initSilk();if(r==="shop")results();badge()}
+addEventListener("hashchange",render);
+
+/* ---------- owner editing ---------- */
+const EB=`<div class="ebar"><div class="wrap">Edit mode is on. Use <strong>Edit</strong> on any product, or <button class="link" data-act="new" style="color:inherit">add a product</button>. Saved changes go live for everyone.</div></div>`;
+const BK=`<div class="wrap"><a class="back" href="#/">← Back to home</a></div>`;
+const NOIMG=`<span class="cat">Using the illustrated sock</span>`;
+function editor(id){const x=id?pid(id):{n:"",c:"Crew",p:299,d:"",b:"#2437C8",s:"#FBFAF6",t:"stripe",f:DEF,r:4.5};draftImg=x.img||null;
+ modal(`<h3>${id?"Edit product":"Add product"}</h3><form class="ed" data-form="prod" data-id="${id||0}"><div><label for="e1">Name</label><input class="in" id="e1" name="n" required value="${esc(x.n)}"></div><div class="f2"><div><label for="e2">Category</label><input class="in" id="e2" name="c" list="cats" required value="${esc(x.c)}"><datalist id="cats">${[...new Set(P.map(p=>p.c))].map(c=>`<option value="${esc(c)}">`).join("")}</datalist></div><div><label for="e3">Price (₹)</label><input class="in" id="e3" name="p" type="number" min="1" required value="${x.p}"></div></div><div><label for="e9">For</label><select class="in" id="e9" name="g">${["Unisex","Women","Men","Kids"].map(g=>`<option${(x.g||"Unisex")==g?" selected":""}>${g}</option>`).join("")}</select></div><div><label for="e4">Description</label><textarea class="in" id="e4" name="d" rows="3">${esc(x.d||"")}</textarea></div><div><label for="e5">Highlights (one per line)</label><textarea class="in" id="e5" name="f" rows="4">${esc((x.f&&x.f.length?x.f:DEF).join(String.fromCharCode(10)))}</textarea></div><div><label>Product image</label><div style="display:flex;gap:12px;align-items:center"><div id="ep">${x.img?`<img class="thumb" src="${x.img}" alt="">`:NOIMG}</div><div><input type="file" accept="image/*" data-up="1"><br><button type="button" class="link" data-act="noimg">Remove image</button></div></div></div><div class="c3"><div><label for="e6">Sock colour</label><input class="in" id="e6" name="b" type="color" value="${x.b}"></div><div><label for="e7">Pattern colour</label><input class="in" id="e7" name="s" type="color" value="${x.s}"></div><div><label for="e8">Pattern</label><select class="in" id="e8" name="t">${["stripe","dots","block"].map(t=>`<option${x.t==t?" selected":""}>${t}</option>`).join("")}</select></div></div><label class="pay"><input type="checkbox" name="hide"${x.hide?" checked":""}> Hide from the store</label><button class="btn dk" id="sv">Save and publish</button>${id?`<button type="button" class="btn o" data-act="del" data-id="${id}">Delete product</button>`:""}<p class="cat" id="st" style="margin:0"></p></form>`)}
+async function pub(){const st=$("#st"),b=$("#sv");if(b)b.disabled=true;if(st)st.textContent="Publishing…";
+ try{const a='<script type="application/json" id="pdata">',i=SRC.indexOf(a)+a.length,j=SRC.indexOf("</scr"+"ipt>",i);
+  let h=SRC.slice(0,i)+JSON.stringify(P).replace(/</g,String.fromCharCode(92)+"u003c")+SRC.slice(j);
+  h=h.replace(new RegExp("<script[^>]* src=[^>]*></scr"+"ipt>","g"),"");
+  await art.publish(h)}
+ catch(e){const c=e&&e.code;if(b)b.disabled=false;if(st)st.textContent=c=="conflict"?"The store was just updated elsewhere. Reloading…":(c=="not_writer"||c=="not_granted")?"This account can't edit the store.":"Couldn't publish ("+(c||"error")+"). Please try again."}}
+document.addEventListener("change",e=>{if(!e.target.dataset.up)return;const f=e.target.files[0];if(!f)return;const rd=new FileReader;
+ rd.onload=()=>{const im=new Image;im.onload=()=>{const k=Math.min(1,800/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);draftImg=c.toDataURL("image/jpeg",.82);$("#ep").innerHTML=`<img class="thumb" src="${draftImg}" alt="">`};im.src=rd.result};rd.readAsDataURL(f)});
+
+/* ---------- actions ---------- */
+function add(id,size,q){const l=cart.find(c=>c.id==id&&c.size==size);l?l.q+=q:cart.push({id,size,q});saveC();const x=pid(id);
+ modal(`<h3>Added to cart</h3><p>${x.n} · Size ${size} × ${q} is in your cart.</p><div class="acts"><button class="btn o" data-act="close">Continue Shopping</button><button class="btn" data-act="go" data-href="#/checkout">Proceed to Checkout</button></div>`)}
+document.addEventListener("click",e=>{if(e.target.id==="ov")return closeM();const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act,id=+b.dataset.id,k=+b.dataset.k,v=b.dataset.v;
+ if(a=="close")closeM();
+ else if(a=="go"){closeM();location.hash=b.dataset.href}
+ else if(a=="quick")add(id,dsz(pid(id)),1);
+ else if(a=="add")add(id,sel.size,sel.q);
+ else if(a=="buy"){buy=[{id,size:sel.size,q:sel.q}];location.hash="#/checkout"}
+ else if(a=="co")buy=null;
+ else if(a=="size"){sel.size=v;document.querySelectorAll(".sz").forEach(s=>s.classList.toggle("on",s===b))}
+ else if(a=="q+"||a=="q-"){sel.q=Math.max(1,Math.min(10,sel.q+(a=="q+"?1:-1)));$("#qv").textContent=sel.q}
+ else if(a=="guide")modal(guide());
+ else if(a=="cat"){F.cat=v;render()}
+ else if(a=="inc"||a=="dec"){cart[k].q=Math.max(1,cart[k].q+(a=="inc"?1:-1));saveC();render()}
+ else if(a=="rm"){cart.splice(k,1);saveC();render()}
+ else if(a=="tab"){tab=v;render()}
+ else if(a=="out"){user=null;sv("sk_user",null);render()}
+ else if(a=="toggle"){edit=!edit;b.textContent=edit?"Exit edit mode":"Edit store";render()}
+ else if(a=="ed")editor(id);
+ else if(a=="gen")location.hash=v=="All"?"#/shop":"#/shop/"+v;
+ else if(a=="new")editor(0);
+ else if(a=="noimg"){draftImg=null;$("#ep").innerHTML=NOIMG}
+ else if(a=="del"){if(!b.dataset.arm){b.dataset.arm=1;b.textContent="Click again to confirm delete";return}P=P.filter(p=>p.id!=id);cart=cart.filter(l=>l.id!=id);saveC();pub()}});
+document.addEventListener("input",e=>{const f=e.target.dataset.f;if(!f)return;F[f]=e.target.value;if(f=="max")$("#mxv").textContent=R(+F.max);results()});
+document.addEventListener("keydown",e=>{if(e.key=="Escape")closeM()});
+document.addEventListener("submit",e=>{e.preventDefault();const fm=e.target,f=fm.dataset.form;if(!f)return;const d=Object.fromEntries(new FormData(fm));
+ if(f=="rev"){const id=fm.dataset.id;(rev[id]=rev[id]||[]).unshift([d.n,+d.r,d.t]);sv("sk_rev",rev);render()}
+ else if(f=="order"){const ls=lines(),T=tot(ls);last={id:"SK"+String(Date.now()).slice(-6),name:d.name,email:d.email,city:d.city,pay:d.pay,total:T.t,date:new Date().toLocaleDateString("en-IN"),items:ls.map(l=>({n:l.x.n,size:l.size,q:l.q,p:l.x.p}))};
+  orders.unshift(last);sv("sk_orders",orders);if(!buy){cart=[];saveC()}buy=null;location.hash="#/done"}
+ else if(f=="login"){user={name:d.name,email:d.email};sv("sk_user",user);render()}
+ else if(f=="prod"){const id=+fm.dataset.id,o={n:d.n,c:d.c,p:+d.p,d:d.d,f:d.f.split(String.fromCharCode(10)).map(s=>s.trim()).filter(Boolean),b:d.b,s:d.s,t:d.t,hide:!!d.hide,g:d.g,img:draftImg||""};
+  if(id)Object.assign(pid(id),o);else P.push({id:Math.max(0,...P.map(p=>p.id))+1,r:4.5,...o});pub()}
+ else if(f=="prof"){user={...user,...d};sv("sk_user",user);render();modal("<h3>Saved</h3><p>Your profile has been updated.</p>")}
+ else if(f=="contact"){fm.innerHTML=`<div class="ok"><strong>Message sent.</strong><br>Thanks for reaching out. We'll reply within one working day.</div>`}});
+(async()=>{try{const u=await claude.use("user"),a=await claude.use("artifact");if(u&&a&&u.canEdit()){art=a;$("#eb").hidden=false}}catch(e){}})();
+badge();render();
+</script>
+</body>
+</html>
